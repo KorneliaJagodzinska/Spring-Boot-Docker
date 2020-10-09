@@ -1,2 +1,4 @@
 FROM openjdk: 8u191-jdk-alpine3.9
-ADD
+ADD target/SpringBoot-Docker-0.0.1-SNAPSHOT.jar .
+EXPOSE 8000
+CMD java -jar SpringBoot-Docker-0.0.1-SNAPSHOT.jar
